@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex UI</title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Css file link -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .card{
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Bootstrap Navber -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Complex UI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carouselExampleIndicators">Section 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Section 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Section 3</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Bootstrap Home page Carousel with button control-->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <!-- Carousel Inner section-->
+        <div class="carousel-inner">
+            <div class="carousel-item" data-bs-interval="10000">
+                <img src="./images/slide1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-sm-block d-md-block">
+                    <h5 class="text-white">First slide Title</h5>
+                    <p class="text-white">Some representative placeholder content for the first slide.</p>
+                    <button class="btn btn-primary">Call to Action</button>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+                <img src="./images/slide2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-sm-block d-md-block">
+                    <h5 class="text-white">Second slide Title</h5>
+                    <p class="text-white">Some representative placeholder content for the first slide.</p>
+                    <button class="btn btn-primary">Call to Action</button>
+                </div>
+            </div>
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./images/slide3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-sm-block d-md-block">
+                    <h5 class="text-white">Third slide Title</h5>
+                    <p class="text-white">Some representative placeholder content for the first slide.</p>
+                    <button class="btn btn-primary">Call to Action</button>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel next and previus button-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Main container for equal padding from the window -->
+    <div class="container">
+        <!-- Highlight Images -->
+        <div class="flex">
+            <div class="flex-image">
+                <img src="./images/flower1.jpg" alt="flower">
+                <p class="text-center text-black">Sun Flower</p>
+            </div>
+            <div class="flex-image">
+                <img src="./images/flower2.jpg" alt="flower">
+                <p class="text-center text-black">Bouquet of Flowers</p>
+            </div>
+            <div class="flex-image">
+                <img src="./images/flower3.jpg" alt="flower">
+                <p class="text-center text-black">Roses</p>
+            </div>
+        </div>
+        <!-- photo gallary -->
+        <div class="grid-container">
+            <div class="section-items-a">
+                <div class="sub-section-item-a">
+                    <img src="./images/river.jpg" alt="">
+                </div>
+                <div class="sub-section-item-b">
+                    <img src="./images/coco.jpg" alt="">
+                    <img src="./images/rose.jpg" alt="">
+                    <img src="./images/crakers.jpg" alt="">
+                    <img src="./images/white-stand-rose.jpg" alt="">
+                </div>
+                <div class="sub-section-item-c">
+                    <img src="./images/city.jpg" alt="">
+                    <img src="./images/car.jpg" alt="">
+                </div>
+            </div>
+            <div class="section-items-b">
+                <img src="./images/parrot.jpg" alt="">
+                <img src="./images/foods.jpg" alt="">
+            </div>
+        </div>
+        <div class="row my-5 d-flex justify-content-between">
+            <div class="card " style="width: 18rem;">
+                <img src="./images/car.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./images/car.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./images/car.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <div class="blockcode">
+        <footer class="page-footer shadow">
+          <div class="d-flex flex-column mx-auto py-5" style="width: 80%">
+            <div class="d-flex flex-wrap justify-content-between">
+              <div>
+                <p class="h5 mb-4" style="font-weight: 600">Devwares</p>
+                <ul class="p-0" style="list-style: none; cursor: pointer">
+                  <li class="my-2">
+                    <a class="text-dark" href="/">Resources</a>
+                  </li>
+                  <li class="my-2">
+                    <a class="text-dark" href="/">About Us</a>
+                  </li>
+                  <li class="my-2">
+                    <a class="text-dark" href="/">Contact</a>
+                  </li>
+                  <li class="my-2"><a class="text-dark" href="/">Blog</a></li>
+                </ul>
+              </div>
+              <div>
+                <p class="h5 mb-4" style="font-weight: 600">Help</p>
+                <ul class="p-0" style="list-style: none; cursor: pointer">
+                  <li class="my-2">
+                    <a class="text-primary" href="/">Support</a>
+                  </li>
+                  <li class="my-2">
+                    <a class="text-dark" href="/">Sign Up</a>
+                  </li>
+                  <li class="my-2">
+                    <a class="text-dark" href="/">Sign In</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p class="h5 mb-4" style="font-weight: 600">Help</p>
+                <ul class="p-0" style="list-style: none; cursor: pointer">
+                  <li class="my-2">
+                    <a class="text-primary" href="/">Support</a>
+                  </li>
+                  <li class="my-2">
+                    <a class="text-primary" href="/">Sign Up</a>
+                  </li>
+                  <li class="my-2">
+                    <a class="text-primary" href="/">Sign In</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <small class="">&copy; Devwares, 2020. All rights reserved.
+
+                </small>
+
+                <div class="btn btn-primary">Back To Top</div>
+            </div>
+            
+          </div>
+        </footer>
+      </div>      
+
+    <!-- Bootstrap js link added -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
